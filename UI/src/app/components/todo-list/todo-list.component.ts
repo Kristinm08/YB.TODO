@@ -16,7 +16,15 @@ export class TodoListComponent implements OnInit {
     });
   }
 
-  createToDo(id: number){
-    this.router.navigate(['todo/new'], { queryParams: { id }});
+  public onEdit(todoItemId: number): void {
+    this.router.navigate(['todo/edit'], { queryParams: { todoItemId }});
+  }
+
+  public onAdd(todoItemId: number): void {    
+    this.router.navigate(['todo/new'], { queryParams: { todoItemId }});
+  }
+
+  public onDelete(todoItemId: number): void {
+    this.todoService.delete(todoItemId);
   }
 }

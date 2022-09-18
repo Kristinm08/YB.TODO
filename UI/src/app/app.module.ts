@@ -4,11 +4,13 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
 import { TodoListComponent } from './todo-list/todo-list.component';
+import { TodoEditComponent } from './components/todo-edit/todo-edit.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    TodoListComponent
+    TodoListComponent,
+    TodoEditComponent
   ],
   imports: [
     BrowserModule, HttpClientModule
