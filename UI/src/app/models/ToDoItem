@@ -1,0 +1,7 @@
+export class ToDoItem {
+    id: number;
+    description: string;
+    IsCompleted?: number;
+    CreatedDate: Date;
+    ModifiedDate: Date;
+}
